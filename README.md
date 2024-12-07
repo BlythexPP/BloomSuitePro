@@ -51,41 +51,71 @@ Bloom filters are probabilistic data structures ideal for memory-efficient membe
 git clone https://github.com/YourUsername/Professional-Bloom-Filter-Suite.git
 cd Professional-Bloom-Filter-Suite
 python3 main.py
-Usage
-Analyze Tab:
-Select a .bf file, explore its properties, view hex dumps, ASCII previews, interpret headers, and check statistics.
+```
 
-Create Tab:
-Choose a .txt file, configure preprocessing (coin type, prefixes, strip balances, remove empty lines), set the error rate, and generate a new Bloom filter with a single click.
+## Creating a Bloom Filter
+1. **Prepare a .txt file**  
+   - Include the elements you want to add to the Bloom filter.
 
-Help Tab:
-Comprehensive guidance on features, usage tips, and links to advanced resources.
+2. **Navigate to the Create tab**  
+   - Choose between **BTC** or **ETH** mode.
+   - For BTC:
+     - Define prefixes to remove.
+   - For ETH:
+     - Rely on automatic **0x** removal.
 
-Donations & Support
-If this toolkit boosts your workflow and you’d like to support further development, feel free to donate:
+3. **Data Cleanup Options**  
+   - Strip balances or extra data as needed.
+   - Remove empty lines for cleaner input.
 
-BTC Address: 1MKs4DGT7Z3EECzrLPL8Ro5hY6KcCsm2Zm
-Telegram TON: UQAgbH2KFLQxJH2MS35pyz6mQLmG13sF6Z6y9v8tAvTS28Wv
-Your contributions help maintain and enhance this suite, ensuring continuous improvements and professional-grade functionality.
+4. **Set the error rate**  
+   - Define a very low error rate for optimal results.
 
-Example Workflow
-Prepare a .txt file with elements or addresses.
-In the Create tab:
-Select coin type (BTC or ETH).
-Define prefixes to remove for BTC or rely on 0x removal for ETH.
-Remove empty lines and strip balances if needed.
-Specify an ultra-low error rate.
-Click "Create Bloom Filter".
-Switch to the Analyze tab:
-Load the newly created .bf file.
-Inspect parameters, stats, hex dumps, and more.
-Contributing
-Contributions are welcome! Please open an issue or submit a pull request. Follow existing coding conventions and include tests as appropriate.
+5. **Generate the Bloom Filter**  
+   - Click **Create Bloom Filter** to complete the process.
 
-License
-This project is licensed under the MIT License.
+---
 
-Additional Resources
-Bloom Filter (Wikipedia)
-Academic papers on probabilistic data structures
-Discussions on efficient data lookups and memory optimization
+## Analyzing a Bloom Filter
+1. **Navigate to the Analyze tab**  
+   - Select a `.bf` file to begin analysis.
+
+2. **Analysis Options**  
+   - View hex dumps for detailed inspection.
+   - Preview ASCII content for readability.
+   - Interpret headers for metadata insights.
+   - Display statistical information about the filter.
+
+---
+
+## Donations & Support
+If you find this suite helpful, consider supporting its ongoing development:
+
+- **BTC Address:**  
+  `1MKs4DGT7Z3EECzrLPL8Ro5hY6KcCsm2Zm`
+
+- **Telegram TON Address:**  
+  `UQAgbH2KFLQxJH2MS35pyz6mQLmG13sF6Z6y9v8tAvTS28Wv`
+
+---
+
+## Contributing
+We welcome contributions! To contribute:
+1. Submit pull requests or report issues.
+2. Follow the existing coding style for consistency.
+3. Add tests where applicable to ensure reliability.
+
+---
+
+## License
+This project is licensed under the **MIT License**.
+
+---
+
+## Additional Resources
+- [Bloom Filter on Wikipedia](https://en.wikipedia.org/wiki/Bloom_filter)
+- Academic research papers on probabilistic data structures.
+
+---
+
+Elevate your data lookup strategies with the **Professional Bloom Filter Suite**—a sophistica
