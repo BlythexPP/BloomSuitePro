@@ -4,46 +4,90 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/platform-windows%20|%20macOS%20|%20linux-lightgrey.svg)]()
 
-Welcome to the **Professional Bloom Filter Suite**, a sophisticated and user-friendly tool designed for both novices and experts. It enables you to **create**, **analyze**, and **inspect** Bloom filters through an interactive graphical interface.
+<img src="https://via.placeholder.com/800x200.png?text=Professional+Bloom+Filter+Suite" alt="Professional Bloom Filter Suite Banner" width="100%" />
+
+Welcome to the **Professional Bloom Filter Suite**, an advanced, yet user-friendly toolkit for creating and analyzing Bloom filters. This application blends professional-grade features with a modern GUI, empowering you to handle large data sets with minimal false positives.
 
 ## Key Features
 
 - **Bloom Filter Creation**:  
-  Transform `.txt` files into efficient Bloom filters with just a few clicks.  
-  - Preprocess large input files by removing unwanted prefixes (BTC/ETH-specific), stripping balances, and eliminating empty lines.  
-  - Configure **extremely small error rates** (e.g., `0.00000000000001`) to achieve minimal false positives.
-  - Supports both **BTC** and **ETH** modes:
-    - **BTC**: Specify any prefix to remove from addresses.
-    - **ETH**: Automatically remove `0x` prefixes from addresses.
+  Easily transform `.txt` files into `.bf` Bloom filter files.  
+  - Preprocess large inputs by:
+    - Removing unwanted prefixes (BTC/ETH-specific).
+    - Stripping balances/extra data.
+    - Eliminating empty lines.
+  - Set **extremely small error rates** (e.g., `0.00000000000001`) for near-flawless accuracy.
+  - Coin-specific logic:
+    - **BTC**: Define any prefix (like `bc1`, `1`, `3`) to filter out addresses.
+    - **ETH**: Automatically remove the `0x` prefix from addresses.
 
 - **Bloom Filter Analysis**:  
-  Load existing `.bf` files and examine:
-  - **Parameters**: Size (m), number of hash functions (k), number of inserted elements (n), error rate.
-  - **Hex Dump**: View the internal bit array in hex form.
-  - **ASCII Preview**: Get a quick ASCII representation of the filter data.
-  - **Header Interpretation**: Understand the filter’s internal structure.
-  - **Statistics**: Check the number of active bits, density, and inserted elements to gauge efficiency and usage.
+  Load `.bf` files and inspect:
+  - **Parameters** (m, k, n, error rate)
+  - **Hex Dump** of the internal bit array
+  - **ASCII Preview**
+  - **Header Interpretation**
+  - **Comprehensive Statistics**: Check bit density, active bits, and element count for insights into filter efficiency.
 
-- **Modern GUI**:  
-  - A sleek, thematically consistent **Tkinter**-based interface.
-  - Easy navigation via tabs: **Analyze**, **Create**, and **Help**.
-  - Responsive controls, user-friendly dialogs, and a clutter-free layout.
+- **Modern GUI & UX**:  
+  - Intuitive **Tkinter** interface.
+  - Organized tabs: **Analyze**, **Create**, and **Help**.
+  - Quick navigation, responsive controls, and a clean aesthetic.
+
+<img src="https://via.placeholder.com/400x200.png?text=Analyze+Tab" alt="Analyze Tab Screenshot" width="50%" /> <img src="https://via.placeholder.com/400x200.png?text=Create+Tab" alt="Create Tab Screenshot" width="50%" />
 
 ## Why Bloom Filters?
 
-Bloom filters are probabilistic data structures that provide memory-efficient membership testing with a tunable false-positive rate. They’re perfect for large datasets where fast lookups and space efficiency are crucial.
+Bloom filters are probabilistic data structures ideal for memory-efficient membership tests. They provide rapid lookups and tunable false-positive rates, making them perfect for large datasets requiring space efficiency and speed.
 
 ## Getting Started
 
 ### Prerequisites
 
-- **Python 3.8+** installed.
-- Dependencies:
-  - `tkinter` (usually included with Python installations).
-  - No external libraries required.
+- **Python 3.8+**
+- Standard libraries only (no external dependencies required)
 
 ### Installation
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/YourUsername/Professional-Bloom-Filter-Suite.git
+```bash
+git clone https://github.com/YourUsername/Professional-Bloom-Filter-Suite.git
+cd Professional-Bloom-Filter-Suite
+python3 main.py
+Usage
+Analyze Tab:
+Select a .bf file, explore its properties, view hex dumps, ASCII previews, interpret headers, and check statistics.
+
+Create Tab:
+Choose a .txt file, configure preprocessing (coin type, prefixes, strip balances, remove empty lines), set the error rate, and generate a new Bloom filter with a single click.
+
+Help Tab:
+Comprehensive guidance on features, usage tips, and links to advanced resources.
+
+Donations & Support
+If this toolkit boosts your workflow and you’d like to support further development, feel free to donate:
+
+BTC Address: 1MKs4DGT7Z3EECzrLPL8Ro5hY6KcCsm2Zm
+Telegram TON: UQAgbH2KFLQxJH2MS35pyz6mQLmG13sF6Z6y9v8tAvTS28Wv
+Your contributions help maintain and enhance this suite, ensuring continuous improvements and professional-grade functionality.
+
+Example Workflow
+Prepare a .txt file with elements or addresses.
+In the Create tab:
+Select coin type (BTC or ETH).
+Define prefixes to remove for BTC or rely on 0x removal for ETH.
+Remove empty lines and strip balances if needed.
+Specify an ultra-low error rate.
+Click "Create Bloom Filter".
+Switch to the Analyze tab:
+Load the newly created .bf file.
+Inspect parameters, stats, hex dumps, and more.
+Contributing
+Contributions are welcome! Please open an issue or submit a pull request. Follow existing coding conventions and include tests as appropriate.
+
+License
+This project is licensed under the MIT License.
+
+Additional Resources
+Bloom Filter (Wikipedia)
+Academic papers on probabilistic data structures
+Discussions on efficient data lookups and memory optimization
