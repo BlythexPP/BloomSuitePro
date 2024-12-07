@@ -4,7 +4,6 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/platform-windows%20|%20macOS%20|%20linux-lightgrey.svg)]()
 
-<img src="https://via.placeholder.com/800x200.png?text=Professional+Bloom+Filter+Suite" alt="Professional Bloom Filter Suite Banner" width="100%" />
 
 Welcome to the **Professional Bloom Filter Suite**, an advanced, yet user-friendly toolkit for creating and analyzing Bloom filters. This application blends professional-grade features with a modern GUI, empowering you to handle large data sets with minimal false positives.
 
@@ -34,7 +33,6 @@ Welcome to the **Professional Bloom Filter Suite**, an advanced, yet user-friend
   - Organized tabs: **Analyze**, **Create**, and **Help**.
   - Quick navigation, responsive controls, and a clean aesthetic.
 
-<img src="https://via.placeholder.com/400x200.png?text=Analyze+Tab" alt="Analyze Tab Screenshot" width="50%" /> <img src="https://via.placeholder.com/400x200.png?text=Create+Tab" alt="Create Tab Screenshot" width="50%" />
 
 ## Why Bloom Filters?
 
