@@ -304,11 +304,20 @@ class BFAnalyzerGUI:
         config_frame = ttk.Labelframe(frame, text="Pre-Processing Options")
         config_frame.pack(pady=10, fill=tk.X, padx=10)
 
-        self.coin_type_var = tk.StringVar(value="BTC")
+        # Ersetze OptionMenu durch Combobox
         ttk.Label(config_frame, text="Select Coin Type:").grid(row=0, column=0, padx=5, pady=5, sticky=tk.E)
+
+        self.coin_type_var = tk.StringVar(value="BTC")
         coin_choices = ["BTC", "ETH"]
-        coin_menu = ttk.OptionMenu(config_frame, self.coin_type_var, *coin_choices)
-        coin_menu.grid(row=0, column=1, padx=5, pady=5, sticky=tk.W)
+        coin_combobox = ttk.Combobox(
+            config_frame,
+            textvariable=self.coin_type_var,
+            values=coin_choices,
+            state="readonly",  # Macht die Combobox schreibgeschützt
+            width=12  # Optional: Breite anpassen
+        )
+        coin_combobox.grid(row=0, column=1, padx=5, pady=5, sticky=tk.W)
+        coin_combobox.current(0)  # Setzt die Standardauswahl auf "BTC"
 
         ttk.Label(config_frame, text="Remove Prefixes (comma-separated):").grid(row=1, column=0, sticky=tk.E, padx=5, pady=5)
         self.prefixes_var = tk.StringVar(value="bc1")
