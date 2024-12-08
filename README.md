@@ -48,9 +48,9 @@ Bloom filters are probabilistic data structures ideal for memory-efficient membe
 ### Installation
 
 ```bash
-git clone https://github.com/YourUsername/Professional-Bloom-Filter-Suite.git
-cd Professional-Bloom-Filter-Suite
-python3 main.py
+git clone https://github.com/BlythexPP/BloomSuitePro.git)
+cd BloomSuitePro
+py main.py
 ```
 
 ## Creating a Bloom Filter
